@@ -23,3 +23,24 @@ object cuentaDeJulian {
 		 else saldo = saldo - monto
 	}
 }
+
+object cuentaPapa {
+	var saldoUsd = 0
+	var precioDeVenta = 15.10
+	var precioCompra = 14.70
+	method saldo() = saldoUsd * precioCompra
+	
+	method depositar(monto) {
+		saldoUsd = saldoUsd + (monto / (precioDeVenta))
+	}
+	
+	method extraer(monto) {
+		saldoUsd = saldoUsd - (monto / precioCompra)
+	}
+}
+
+
+
+
+
+
