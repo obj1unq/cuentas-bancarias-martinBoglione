@@ -85,7 +85,7 @@ object cuentaCombinada {
 	
 	method extraer(monto) {
 		primaria.extraer(monto)
-		//sin terminar
+		//sin terminarr
 		
 	}
 }
