@@ -40,6 +40,39 @@ object cuentaPapa {
 }
 
 
+object casaPepeJulian {
+	var epoca = cuentaDePepe
+	var derrocha = 0
+	
+	
+	method queEpoca() {
+		return epoca
+	}
+	method cambiarEpoca(nuevaEpoca) {
+		epoca = nuevaEpoca
+	}
+	
+	method derrochona() {
+		return derrocha > 40000
+	}
+	
+	method compra(monto) {
+		epoca.extraer(monto)
+		derrocha += monto
+	}
+	
+	method esBacan() {
+		return epoca.saldo() > 40000 
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
