@@ -39,7 +39,7 @@ object cuentaPapa {
 	}
 }
 
-
+//Parte 2 
 object casaPepeJulian {
 	var epoca = cuentaDePepe
 	var derrocha = 0
@@ -67,7 +67,28 @@ object casaPepeJulian {
 }
 
 
-
+//Parte 3 
+object cuentaCombinada {
+	var primaria = cuentaDePepe
+	var secundaria = cuentaDeJulian
+	
+	method saldo() {
+		return primaria.saldo() + secundaria.saldo()
+	}
+	
+	method depositar(monto) {
+		if(secundaria.saldo() < 1000) {
+			secundaria.depositar(monto)
+			
+		}else primaria.depositar(monto)
+	} 
+	
+	method extraer(monto) {
+		primaria.extraer(monto)
+		//sin terminar
+		
+	}
+}
 
 
 
